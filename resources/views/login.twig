@@ -1,0 +1,38 @@
+{% extends "theme::layouts/login" %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-lg-offset-9">
+
+                <div class="logo">
+                    {{ img('theme::img/logo-dark-transparent.png') }}
+                </div>
+
+                {{ form_open({'method': 'post'}) }}
+
+                <div class="form-group credentials">
+                    {{ form_email("email", null, {'class': 'form-control', 'placeholder': 'Email'}) }}{{ icon('envelope') }}
+                    {{ form_password('password', {'class': 'form-control', 'placeholder': 'Password'}) }}{{ icon('locked') }}
+                </div>
+
+                <div class="form-group checkbox">
+                    <label>
+                        {{ form_checkbox("remember", null, false, {'id': 'remember'}) }}
+                        {{ trans('anomaly.module.users::field.remember_me.name') }}
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" value="Login" class="btn btn-success btn-lg btn-block">
+                        {{ trans('anomaly.module.users::button.login') }}
+                    </button>
+                </div>
+
+                {{ form_close() }}
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

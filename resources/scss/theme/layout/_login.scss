@@ -1,0 +1,41 @@
+#login {
+    padding-top: 5em;
+    background: $brand-primary;
+
+    .logo {
+        text-align: center;
+        margin-bottom: 2em;
+    }
+
+    form {
+
+        label {
+            color: #ffffff;
+        }
+
+        .credentials {
+            position: relative;
+
+            input[type="email"] {
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+
+            input[type="password"] {
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+            }
+
+            i {
+                right: 1em;
+                margin-top: -1.6em;
+                position: absolute;
+                color: $input-color-placeholder;
+
+                &.fa-lock {
+                    right: 1.15em;
+                }
+            }
+        }
+    }
+}
