@@ -1,52 +1,26 @@
-<nav id="navigation" class="nano">
+<section id="navigation">
 
-    <a href="#" class="fa fa-times close visible-xs" data-toggle="navigation"></a>
-
-    <ul class="nano-content">
-        <li class="user">
-            <div class="media">
-                <div class="media-left">
-                    {{ image(config_get('anomaly.theme.anomaly::variables.icon')).class('logo')|raw }}
-                </div>
-                <div class="media-body">
-                    <strong>
-                        <img class="img-circle avatar" src="https://gravatar.com/avatar/{{ md5(auth_user().email) }}">
-                        {{ auth_user().getDisplayName() ?: auth_user().username }}
-                    </strong>
-                    <ul class="list-inline">
-                        <li>
-                            <a href="{{ url_to('admin/logout') }}">
-                                {{ icon('power-off') }}
-                                {{ trans('theme::link.logout') }}
-                            </a>
-                        </li>
-                        <li>
-                            <a href="{{ url() }}" target="_blank">
-                                {{ icon('external-link') }}
-                                {{ trans('theme::link.view_site') }}
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
         </li>
-
-        {% for module in template.addons.modules.navigation() %}
-            <li class="{{ module.active ? 'active' }}">
-                <a href="{{ url_to('admin/' ~ module.slug) }}">
-                    {{ icon(module.icon) }}
-                    <span>{{ trans(module.title) }}</span>
-                </a>
-            </li>
-        {% endfor %}
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Another link</a>
+        </li>
     </ul>
 
-    {#<ul class="list-unstyled more">
-        <li><a href="https://anomaly.is/" target="_blank" class="item">About </a></li>
-        <li><a href="https://pyrocms.com/" target="_blank" class="item">PyroCMS.com</a></li>
-        <li><a href="https://docs.pyrocms.com/" target="_blank" class="item">Documentation</a></li>
-        <li><a href="https://docs.pyrocms.com/" target="_blank" class="item">Support</a></li>
-        <li><a href="https://anomaly.is/contact" target="_blank" class="item">Feedback</a></li>
-    </ul>#}
+    <ul class="secondary">
+        <li>
+            <a href="{{ url('/') }}" target="_blank" class="btn btn-info btn-sm">View Site</a>
+        </li>
+        <li class="toggle">
+            <a href="#">
+                {{ icon('th') }}
+            </a>
+        </li>
+    </ul>
 
-</nav>
+</section>

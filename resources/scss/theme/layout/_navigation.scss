@@ -1,0 +1,49 @@
+#navigation {
+    height: 4em;
+    background: $gray;
+
+    .nav {
+        margin-top: 1.5em;
+        margin-left: 1.5em;
+        border-bottom: none;
+        display: inline-block;
+
+        li {
+            a {
+                border: none;
+                color: $gray-light;
+
+                &.active {
+                    color: $white;
+                    background: $gray-dark;
+                }
+            }
+        }
+    }
+
+    .secondary {
+        padding: 0;
+        float: right;
+        margin-top: 1em;
+        list-style: none;
+        margin-right: 1.5em;
+
+        li {
+            display: inline-block;
+
+            &:not(:first-of-type) {
+                margin-left: 1em;
+            }
+
+            &.toggle {
+                a {
+                    i {
+                        line-height: 0;
+                        font-size: 1.75em;
+                        color: $gray-light;
+                    }
+                }
+            }
+        }
+    }
+}

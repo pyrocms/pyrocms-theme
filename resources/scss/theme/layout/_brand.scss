@@ -1,0 +1,9 @@
+#brand {
+    float: left;
+    width: 12em;
+    height: 12em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: $brand-primary;
+    background-image: url("{{ image_url('theme::img/icon-dark-transparent.png') }}");
+}

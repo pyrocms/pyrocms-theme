@@ -8,6 +8,10 @@
 
 <body>
 
+{% include "theme::partials/brand" %}
+{% include "theme::partials/navigation" %}
+{% include "theme::partials/menu" %}
+
 {% include "theme::partials/messages" %}
 
 {{ block('content') }}
