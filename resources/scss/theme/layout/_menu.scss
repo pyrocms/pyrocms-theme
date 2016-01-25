@@ -1,4 +1,55 @@
 #menu {
     height: 8em;
     background: $gray-dark;
+
+    .section {
+        display: inline-block;
+        margin: 1.5em 0 0 1.5em;
+
+        a {
+            font-size: 1.5em;
+            margin-right: 1em;
+            position: relative;
+            color: $gray-lighter;
+            text-decoration: none;
+
+            &:not(:last-child):after {
+                content: '/';
+                right: -0.75em;
+                position: absolute;
+                color: lighten($gray, 15%);
+            }
+
+            &.active {
+                color: $blue;
+            }
+
+            i {
+                font-size: .5em;
+                color: $gray-lighter;
+            }
+        }
+    }
+
+    .description {
+        color: $gray-light;
+        display: inline-block;
+        margin: 1em 0 0 1.5em;
+    }
+
+    .buttons {
+        padding: 0;
+        float: right;
+        margin-top: 0.5em;
+        list-style: none;
+        margin-right: 1.5em;
+
+        li {
+            display: inline-block;
+
+            &:not(:first-of-type) {
+                margin-left: 1em;
+            }
+        }
+    }
 }

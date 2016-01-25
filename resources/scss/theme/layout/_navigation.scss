@@ -13,6 +13,10 @@
                 border: none;
                 color: $gray-light;
 
+                &:hover {
+                    color: lighten($gray-light, 10%);
+                }
+
                 &.active {
                     color: $white;
                     background: $gray-dark;
