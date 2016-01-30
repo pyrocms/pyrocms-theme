@@ -1,26 +1,11 @@
-<section id="navigation">
-
+<div id="navigation">
     <ul class="nav nav-tabs">
-        <li class="nav-item">
-            <a class="nav-link active" href="#">Active</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Another link</a>
-        </li>
+        {% for module in template.addons.modules.navigation().slice(0, 5) %}
+            <li class="nav-item">
+                <a class="nav-link {{ module.active ? 'active' }}" href="{{ url_to('admin/' ~ module.slug) }}">
+                    {{ trans(module.title) }}
+                </a>
+            </li>
+        {% endfor %}
     </ul>
-
-    <ul class="secondary">
-        <li>
-            <a href="{{ url('/') }}" target="_blank" class="btn btn-secondary-outline btn-sm">View Site</a>
-        </li>
-        <li class="toggle">
-            <a href="#">
-                {{ icon('th') }}
-            </a>
-        </li>
-    </ul>
-
-</section>
+</div>

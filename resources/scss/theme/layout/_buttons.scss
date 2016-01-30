@@ -1,0 +1,15 @@
+#buttons {
+    padding: 0;
+    float: right;
+    list-style: none;
+    display: inline-block;
+    margin: 4em 1.5em 0 0;
+
+    .btn {
+        display: inline-block;
+
+        &:not(:first-of-type) {
+            margin-left: 1em;
+        }
+    }
+}

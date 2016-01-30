@@ -1,0 +1,47 @@
+#sections {
+    display: inline-block;
+    margin: 1.5em 0 0 1.5em;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+            display: inline-block;
+
+            a {
+                font-size: 1.5em;
+                margin-right: 1em;
+                position: relative;
+                color: $gray-lighter;
+                text-decoration: none;
+
+                i {
+                    font-size: .5em;
+                    color: $gray-lighter;
+                }
+            }
+
+            &:not(:last-child) {
+                a:after {
+                    content: '/';
+                    right: -0.75em;
+                    position: absolute;
+                    color: lighten($gray, 15%);
+                }
+            }
+
+            &.active {
+                a {
+                    color: $blue;
+                }
+            }
+        }
+    }
+
+    .description {
+        color: $gray-light;
+        display: inline-block;
+    }
+}

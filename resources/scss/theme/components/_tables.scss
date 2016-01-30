@@ -1,0 +1,15 @@
+//
+// Basic Bootstrap table
+//
+
+.table {
+    th,
+    td {
+        vertical-align: middle;
+    }
+
+    thead th {
+        vertical-align: bottom;
+        border-bottom: (2 * $table-border-width) solid $table-border-color;
+    }
+}

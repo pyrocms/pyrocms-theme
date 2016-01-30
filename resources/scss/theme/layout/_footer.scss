@@ -1,0 +1,40 @@
+#footer {
+    padding: 1em 3em;
+    background: $gray-lighter;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+            color: $gray-light;
+            display: inline-block;
+            font-size: $font-size-sm;
+
+            &:not(:last-child) {
+                margin-right: 0.75em;
+            }
+
+            &.logo {
+                margin-right: 2em;
+
+                img {
+                    margin-top: -0.5em;
+                    display: inline-block;
+                }
+            }
+
+            &.footprint {
+                span {
+                    color: darken($gray-lighter, 10%);
+                }
+            }
+
+            &.help {
+                float: right;
+                margin-top: -0.25em;
+            }
+        }
+    }
+}
