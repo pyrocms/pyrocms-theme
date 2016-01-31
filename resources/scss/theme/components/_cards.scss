@@ -1,0 +1,8 @@
+.card {
+    overflow: hidden;
+
+    &.card-blank {
+        border: none;
+        background: transparent;
+    }
+}

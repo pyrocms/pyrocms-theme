@@ -1,0 +1,32 @@
+<section id="push" class="hidden">
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="col-md-10">
+                <form method="get" action="{{ url('admin/search') }}">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search..." name="filter_term">
+                        <span class="input-group-addon">{{ icon('search') }}</span>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-md-14 modules">
+                {% for modules in template.addons.modules.navigation().chunk(4) %}
+                    <div class="row">
+                        {% for module in modules %}
+                            <div class="col-sm-6">
+                                <a class="nav-link {{ module.active ? 'active' }}" href="{{ url_to('admin/' ~ module.slug) }}">
+                                    {{ trans(module.title) }}
+                                </a>
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% endfor %}
+            </div>
+
+        </div>
+
+    </div>
+</section>

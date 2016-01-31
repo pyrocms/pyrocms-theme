@@ -598,10 +598,10 @@ $thumbnail-border-radius: $border-radius !default;
 $breadcrumb-padding-vertical: .75rem !default;
 $breadcrumb-padding-horizontal: 1rem !default;
 
-$breadcrumb-bg: $gray-lighter !default;
+$breadcrumb-bg: transparent !default;
 $breadcrumb-divider-color: $gray-light !default;
-$breadcrumb-active-color: $gray-light !default;
-$breadcrumb-divider: "/" !default;
+$breadcrumb-active-color: $brand-info !default;
+$breadcrumb-divider: "›" !default;
 
 // Carousel
 

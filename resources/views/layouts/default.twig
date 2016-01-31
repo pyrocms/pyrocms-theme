@@ -8,6 +8,7 @@
 
 <body>
 
+{% include "theme::partials/push" %}
 {% include "theme::partials/brand" %}
 {% include "theme::partials/navbar" %}
 {% include "theme::partials/header" %}
@@ -15,6 +16,18 @@
 <main id="main">
 
     {% include "theme::partials/messages" %}
+
+    {% if template.breadcrumbs %}
+        <ol class="breadcrumb" style="margin-bottom: 5px;">
+            {% for breadcrumb, href in template.breadcrumbs %}
+                <li class="{{ loop.last ? 'active' }}">
+                    <a href="{{ href }}">
+                        {{ trans(breadcrumb) }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ol>
+    {% endif %}
 
     {{ block('content') }}
 

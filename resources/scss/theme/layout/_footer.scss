@@ -1,6 +1,6 @@
 #footer {
     padding: 1em 3em;
-    background: darken($gray-lighter, 5%);
+    background: darken($gray-lighter, 4%);
 
     ul {
         margin: 0;
@@ -8,7 +8,7 @@
         list-style: none;
 
         li {
-            color: $gray-light;
+            color: darken($gray-lighter, 20%);
             display: inline-block;
             font-size: $font-size-sm;
 

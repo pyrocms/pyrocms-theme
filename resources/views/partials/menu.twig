@@ -2,7 +2,10 @@
     <li>
         <a href="{{ url('/') }}" target="_blank" class="btn btn-secondary-outline btn-sm">View Site</a>
     </li>
-    <li class="toggle">
+    <li>
+        {{ user().display_name }}
+    </li>
+    <li>
         <a href="#">
             {{ icon('th') }}
         </a>

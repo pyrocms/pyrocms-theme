@@ -7,19 +7,14 @@
 
     li {
         display: inline-block;
+        color: lighten($gray-light, 5%);
 
         &:not(:first-of-type) {
             margin-left: 1em;
         }
 
-        &.toggle {
-            a {
-                i {
-                    line-height: 0;
-                    font-size: 1.75em;
-                    color: $gray-light;
-                }
-            }
+        a {
+            //color: lighten($gray-light, 5%);
         }
     }
 }

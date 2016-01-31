@@ -4,6 +4,16 @@
     th,
     td {
         vertical-align: middle;
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
     }
 
     thead th {
