@@ -11,9 +11,14 @@
 {% include "theme::partials/brand" %}
 {% include "theme::partials/navbar" %}
 {% include "theme::partials/header" %}
-{% include "theme::partials/messages" %}
 
-{{ block('content') }}
+<main id="main">
+
+    {% include "theme::partials/messages" %}
+
+    {{ block('content') }}
+
+</main>
 
 {% include "theme::partials/footer" %}
 {% include "theme::partials/modals" %}
