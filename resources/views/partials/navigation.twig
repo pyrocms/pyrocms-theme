@@ -3,9 +3,21 @@
         {% for module in template.addons.modules.navigation().slice(0, 5) %}
             <li class="nav-item">
                 <a class="nav-link {{ module.active ? 'active' }}" href="{{ url_to('admin/' ~ module.slug) }}">
+
+                    {% if loop.first %}
+                        {{ icon('home') }}&nbsp;
+                    {% endif %}
+
                     {{ trans(module.title) }}
                 </a>
             </li>
         {% endfor %}
+
+        <li class="nav-item">
+            <a class="nav-link {{ module.active ? 'active' }}" href="{{ url_to('admin/' ~ module.slug) }}">
+                &bull;&bull;&bull;
+            </a>
+        </li>
+
     </ul>
 </div>

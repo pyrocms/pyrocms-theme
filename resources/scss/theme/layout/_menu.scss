@@ -1,20 +1,40 @@
+$menu-link-color: lighten($gray-light, 25%);
+
 #menu {
     padding: 0;
     float: right;
-    margin-top: 1em;
     list-style: none;
     margin-right: 1.5em;
 
     li {
+        position: relative;
+        padding: 1.2em 0.5em;
         display: inline-block;
-        color: lighten($gray-light, 5%);
+        color: $menu-link-color;
 
-        &:not(:first-of-type) {
-            margin-left: 1em;
+        &.dropdown {
+            padding-right: 0.75em;
+
+            &:after {
+                top: 40%;
+                right: 0;
+                content: "\f0d7";
+                font-size: 0.5em;
+                position: absolute;
+                font-family: "FontAwesome";
+            }
         }
 
         a {
-            //color: lighten($gray-light, 5%);
+            color: $menu-link-color;
+        }
+
+        .dropdown-menu {
+            right: 0;
+            left: auto;
+            width: auto;
+            padding: 2em;
+            border-radius: 0;
         }
     }
 }
