@@ -18,11 +18,15 @@
                     <img class="media-object" src="https://gravatar.com/avatar/9cfe309dda642d286b47ed70dbb86b3c">
                 </a>
                 <div class="media-body">
-                    <div class="media-heading">Ryan Thompson</div>
-                    <div class="email">test@test.com</div>
+                    <div class="media-heading">{{ user().display_name }}</div>
+                    <div class="email">{{ user().email }}</div>
                     <a href="{{ url('admin/logout') }}" class="btn btn-primary btn-sm">Logout</a>
                 </div>
             </div>
+
+            <hr>
+
+            <a href="{{ url('admin/preferences') }}" class="nav-item">Preferences</a>
         </div>
     </li>
 
