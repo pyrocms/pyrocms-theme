@@ -1,4 +1,7 @@
-<section id="push" class="hidden">
+<section id="push">
+
+    <a href="#" data-dismiss="push-menu" class="dismiss">{{ icon('times-circle') }}</a>
+
     <div class="container-fluid">
 
         <div class="row">
@@ -17,7 +20,8 @@
                     <div class="row">
                         {% for module in modules %}
                             <div class="col-sm-6">
-                                <a class="nav-link {{ module.active ? 'active' }}" href="{{ url_to('admin/' ~ module.slug) }}">
+                                <a class="nav-link {{ module.active ? 'active' }}"
+                                   href="{{ url_to('admin/' ~ module.slug) }}">
                                     {{ trans(module.title) }}
                                 </a>
                             </div>

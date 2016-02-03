@@ -4,11 +4,12 @@ $menu-link-color: lighten($gray-light, 25%);
     padding: 0;
     float: right;
     list-style: none;
-    margin-right: 1.5em;
+    margin: 1.1em 1.5em 0 0;
 
     li {
+        height: 100%;
+        margin-left: 1em;
         position: relative;
-        padding: 1.2em 0.5em;
         display: inline-block;
         color: $menu-link-color;
 
@@ -16,7 +17,7 @@ $menu-link-color: lighten($gray-light, 25%);
             padding-right: 0.75em;
 
             &:after {
-                top: 40%;
+                top: 25%;
                 right: 0;
                 content: "\f0d7";
                 font-size: 0.5em;
@@ -32,9 +33,38 @@ $menu-link-color: lighten($gray-light, 25%);
         .dropdown-menu {
             right: 0;
             left: auto;
-            width: auto;
             padding: 2em;
             border-radius: 0;
+            min-width: 350px;
+            margin-top: 1.3em;
+            color: lighten($gray, 10%);
+
+            .arrow {
+                left: 75%;
+                top: -11px;
+                width: 22px;
+                height: 11px;
+                margin-left: -11px;
+                position: absolute;
+                letter-spacing: normal;
+                border-bottom: 11px solid #ffffff;
+                border-left: 11px solid transparent;
+                border-right: 11px solid transparent;
+                border-top: none;
+            }
+
+            .media {
+                margin-top: 0;
+
+                .media-heading {
+                    margin-bottom: 0;
+                    font-weight: bold;
+                }
+
+                .btn {
+                    color: #ffffff;
+                }
+            }
         }
     }
 }

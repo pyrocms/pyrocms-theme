@@ -14,7 +14,7 @@
         {% endfor %}
 
         <li class="nav-item">
-            <a class="nav-link {{ module.active ? 'active' }}" href="{{ url_to('admin/' ~ module.slug) }}">
+            <a class="nav-link" data-toggle="push-menu" href="#">
                 &bull;&bull;&bull;
             </a>
         </li>

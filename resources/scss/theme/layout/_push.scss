@@ -1,6 +1,12 @@
 #push {
+    top: -100%;
     padding: 2em;
-    background: #575757;
+    position: absolute;
+    background: lighten($gray, 10%);
+
+    form {
+        padding: 1.5em 0;
+    }
 
     .modules {
         a {
@@ -10,5 +16,20 @@
                 text-decoration: underline;
             }
         }
+    }
+
+    .dismiss {
+        top: 0.5em;
+        right: 1em;
+        z-index: 10001;
+        position: absolute;
+        font-size: $font-size-lg;
+        color: darken($gray-lighter, 20%);
+    }
+}
+
+body.pushing {
+    #push {
+        position: relative;
     }
 }

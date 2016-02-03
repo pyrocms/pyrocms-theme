@@ -10,11 +10,19 @@
         </a>
 
         <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Separated link</a>
+
+            <div class="arrow"></div>
+
+            <div class="media">
+                <a class="media-left pull-left" href="#">
+                    <img class="media-object" src="https://gravatar.com/avatar/9cfe309dda642d286b47ed70dbb86b3c">
+                </a>
+                <div class="media-body">
+                    <div class="media-heading">Ryan Thompson</div>
+                    <div class="email">test@test.com</div>
+                    <a href="{{ url('admin/logout') }}" class="btn btn-primary btn-sm">Logout</a>
+                </div>
+            </div>
         </div>
     </li>
 
