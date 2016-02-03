@@ -30,3 +30,15 @@ $navigation-active-bg: $gray-dark;
         }
     }
 }
+
+@include media-breakpoint-down(sm) {
+    #navigation {
+        .nav {
+            li {
+                &:not(:first-child) {
+                    display: none;
+                }
+            }
+        }
+    }
+}

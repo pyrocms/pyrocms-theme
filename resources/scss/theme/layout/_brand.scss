@@ -7,3 +7,11 @@
     background-color: $brand-primary;
     background-image: url("{{ image_url('theme::img/icon-dark-transparent.png') }}");
 }
+
+@include media-breakpoint-down(sm) {
+    #brand {
+        width: 4em;
+        height: 4em;
+        background-size: 45%;
+    }
+}

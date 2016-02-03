@@ -76,3 +76,9 @@ $menu-link-color: lighten($gray-light, 25%);
         }
     }
 }
+
+@include media-breakpoint-down(sm) {
+    #menu {
+        display: none;
+    }
+}

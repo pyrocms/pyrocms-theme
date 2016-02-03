@@ -45,3 +45,23 @@
         display: inline-block;
     }
 }
+
+@include media-breakpoint-down(sm) {
+    #sections {
+        margin-top: 0;
+        display: block;
+        text-align: center;
+
+        ul {
+            li {
+                a {
+                    font-size: $font-size-root;
+                }
+            }
+        }
+
+        .description {
+            display: none;
+        }
+    }
+}

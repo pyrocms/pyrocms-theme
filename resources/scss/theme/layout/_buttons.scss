@@ -13,3 +13,15 @@
         }
     }
 }
+
+@include media-breakpoint-down(sm) {
+    #buttons {
+        float: none;
+        display: block;
+        margin: 1em 1.5em 0;
+
+        .btn {
+            display: block;
+        }
+    }
+}
