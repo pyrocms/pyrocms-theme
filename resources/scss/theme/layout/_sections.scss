@@ -25,9 +25,11 @@
 
             &:not(:last-child) {
                 a:after {
+                    top: 0;
                     content: '/';
                     right: -0.75em;
                     position: absolute;
+                    margin-top: -0.15em;
                     color: lighten($gray, 15%);
                 }
             }
