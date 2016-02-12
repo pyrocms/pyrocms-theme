@@ -8,6 +8,24 @@
         }
     }
 
+    .controls {
+        &.top {
+            &.affix {
+                top: 0;
+                left: 0;
+                right: 0;
+                position: fixed;
+                border-radius: 0;
+                z-index: $zindex-modal;
+                border-width: 0 0 1px 0;
+
+                + div {
+                    margin-top: 92px;
+                }
+            }
+        }
+    }
+
     label {
 
         &.control-label {
