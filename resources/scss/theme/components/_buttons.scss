@@ -1,3 +1,10 @@
+.btn {
+    &.btn-xs {
+        font-size: $font-size-xs;
+        padding: $btn-padding-y/2 $btn-padding-x/2;
+    }
+}
+
 .btn-secondary-outline {
     //color: $gray-lighter;
 }
