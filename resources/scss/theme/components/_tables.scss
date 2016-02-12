@@ -16,6 +16,25 @@
         }
     }
 
+    > thead,
+    > tbody,
+    > tfoot {
+        > tr {
+            &.dragged {
+                opacity: 0.2;
+            }
+
+            > th,
+            > td {
+                vertical-align: middle;
+
+                .handle:hover {
+                    cursor: move;
+                }
+            }
+        }
+    }
+
     thead th {
         vertical-align: bottom;
         border-bottom: (2 * $table-border-width) solid $table-border-color;
