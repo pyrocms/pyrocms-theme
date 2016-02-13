@@ -16,7 +16,7 @@
                 right: 0;
                 position: fixed;
                 border-radius: 0;
-                z-index: $zindex-modal;
+                z-index: $zindex-modal - 100;
                 border-width: 0 0 1px 0;
 
                 + div {

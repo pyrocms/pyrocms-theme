@@ -126,34 +126,35 @@ return [
     $btn-border-radius: $border-radius !default;
     $btn-border-radius-lg: $border-radius-lg !default;
     $btn-border-radius-sm: $border-radius-sm !default;
+*/
 
     // Forms
+    'input-padding-x' => '.75rem',
+    'input-padding-y' => '.375rem',
 
-    $input-padding-x: .75rem !default;
-    $input-padding-y: .375rem !default;
+    'input-bg'          => '#ffffff',
+    'input-bg-disabled' => '#818a91',
 
-    $input-bg: #ffffff !default;
-    $input-bg-disabled: $gray-lighter !default;
+    'input-color'            => '#3e3e3e',
+    'input-border-color'     => '#cccccc',
+    'input-btn-border-width' => '1px',
+    'input-box-shadow'       => 'inset 0 1px 1px rgba(0, 0, 0, .075)',
 
-    $input-color: $gray !default;
-    $input-border-color: #cccccc !default;
-    $input-btn-border-width: $border-width !default; // For form controls and buttons
-    $input-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075) !default;
+    'input-border-radius'    => '.25rem',
+    'input-border-radius-lg' => '.3rem',
+    'input-border-radius-sm' => '.2rem',
 
-    $input-border-radius: $border-radius !default;
-    $input-border-radius-lg: $border-radius-lg !default;
-    $input-border-radius-sm: $border-radius-sm !default;
+    'input-border-focus'      => '#38b5e6',
+    'input-box-shadow-focus'  => 'rgba(102, 175, 233, .6)',
+    'input-color-placeholder' => '#999999',
 
-    $input-border-focus: #66afe9 !default;
-    $input-box-shadow-focus: rgba(102, 175, 233, .6) !default;
+    'input-padding-x-sm' => '.75rem',
+    'input-padding-y-sm' => '.275rem',
 
-    $input-color-placeholder: #999999 !default;
+    'input-padding-x-lg' => '1.25rem',
+    'input-padding-y-lg' => '.75rem',
 
-    $input-padding-x-sm: .75rem !default;
-    $input-padding-y-sm: .275rem !default;
-
-    $input-padding-x-lg: 1.25rem !default;
-    $input-padding-y-lg: .75rem !default;
+    /*
 
     $input-height: (($font-size-base * $line-height) + ($input-padding-y * 2)) !default;
     $input-height-lg: (($font-size-lg * $line-height-lg) + ($input-padding-y-lg * 2)) !default;
