@@ -26,7 +26,7 @@
 $purple: #61259e !default;
 $green: #24ce7b !default;
 $blue: #38b5e6 !default;
-$orange: #f69630 !default;
+$orange: #f48714 !default;
 $red: #f6303e !default;
 
 $gray-dark: #353535 !default;
@@ -94,7 +94,7 @@ $body-color: $gray-dark !default;
 //
 // Style anchor elements.
 
-$link-color: $brand-primary !default;
+$link-color: $brand-info !default;
 $link-decoration: none !default;
 $link-hover-color: darken($link-color, 5%) !default;
 $link-hover-decoration: underline !default;

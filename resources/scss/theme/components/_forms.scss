@@ -2,9 +2,13 @@
 
     .form-group {
         margin-bottom: 2rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid $gray-lighter;
 
         &:last-of-type {
             margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
         }
     }
 

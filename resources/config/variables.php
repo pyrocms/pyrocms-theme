@@ -9,7 +9,7 @@ return [
     'purple'                 => '#61259e',
     'green'                  => '#24ce7b',
     'blue'                   => '#38b5e6',
-    'orange'                 => '#f69630',
+    'orange'                 => '#f48714',
     'red'                    => '#f6303e',
 
     // Grayscale
@@ -32,7 +32,7 @@ return [
     'body-color'             => '#353535',
 
     // Links
-    'link-color'             => '#61259e',
+    'link-color'             => '#38b5e6',
     'link-decoration'        => 'none',
 
     // Typography
