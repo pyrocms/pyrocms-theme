@@ -133,7 +133,7 @@ return [
     'input-padding-y' => '.375rem',
 
     'input-bg'          => '#ffffff',
-    'input-bg-disabled' => '#818a91',
+    'input-bg-disabled' => '#eceeef',
 
     'input-color'            => '#3e3e3e',
     'input-border-color'     => '#cccccc',
