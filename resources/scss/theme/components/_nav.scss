@@ -16,12 +16,18 @@
                 &:hover {
                     background: $gray-lighter;
                 }
+            }
 
-                &.active {
+            &.active {
+                a {
                     color: #ffffff;
                     background: $brand-info;
                 }
             }
         }
     }
+}
+
+.tab-pane:not(.active) {
+    display: none;
 }
