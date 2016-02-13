@@ -6,6 +6,11 @@
         margin: 0;
         padding: 0;
         list-style: none;
+        display: inline-block;
+
+        &.pull-right {
+            margin-top: -0.35em;
+        }
 
         li {
             color: darken($gray-lighter, 20%);
@@ -29,11 +34,6 @@
                 span {
                     color: darken($gray-lighter, 15%);
                 }
-            }
-
-            &.help {
-                float: right;
-                margin-top: -0.25em;
             }
         }
     }
