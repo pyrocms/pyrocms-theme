@@ -289,7 +289,7 @@ return [
     // Jumbotron
 
     $jumbotron-padding: 2rem !default;
-    $jumbotron-bg: $gray-lighter !default;
+    $jumbotron-bg: #dee2e3 !default;
 
     // Form states and alerts
     //
