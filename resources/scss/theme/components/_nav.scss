@@ -26,6 +26,22 @@
             }
         }
     }
+
+    &.nav-pills {
+        .nav-item {
+            .nav-link {
+                color: $body-color;
+
+                &:hover {
+                    background: $gray-lighter;
+                }
+
+                small {
+                    color: $gray-light;
+                }
+            }
+        }
+    }
 }
 
 .tab-pane:not(.active) {
