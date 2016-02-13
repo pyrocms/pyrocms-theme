@@ -15,7 +15,7 @@
 
             <div class="media">
                 <a class="media-left pull-left" href="#">
-                    <img class="media-object" src="https://gravatar.com/avatar/9cfe309dda642d286b47ed70dbb86b3c">
+                    <img class="media-object" src="https://gravatar.com/avatar/{{ md5(user().email) }}">
                 </a>
                 <div class="media-body">
                     <div class="media-heading">{{ user().display_name }}</div>
