@@ -1,3 +1,18 @@
+.c-input {
+
+    > input {
+
+        &:active ~ .c-indicator {
+            opacity: 0.4;
+            background-color: #0074d9; // :checked color
+        }
+
+        &:disabled ~ .c-indicator {
+            opacity: 0.4;
+        }
+    }
+}
+
 .c-select {
     @include border-radius($btn-border-radius);
 }
