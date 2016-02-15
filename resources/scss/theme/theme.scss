@@ -23,9 +23,11 @@
 @import "components/trees";
 @import "components/tables";
 @import "components/buttons";
+@import "components/progress";
 @import "components/breadcrumb";
 @import "components/scaffolding";
 @import "components/custom-forms";
 
 // Special Pages
 @import "pages/login";
+@import "pages/installer";

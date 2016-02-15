@@ -22,7 +22,7 @@
             <select class="c-select" onchange="window.location = '?_locale=' + this.value;">
                 {% for iso in config('streams::locales.supported')|keys %}
                     <option value="{{ iso }}" {{ config('app.locale') == iso ? 'selected' }}>
-                        {{ trans('streams::locale.' ~ iso ~ '.name') }}
+                        {{ trans('streams::locale.' ~ iso ~ '.name') }} ({{ iso }})
                     </option>
                 {% endfor %}
             </select>

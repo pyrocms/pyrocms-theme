@@ -1,7 +1,7 @@
 <?php
 
 return [
-
+    
     // Old crap
     'secondary'              => '#ff0',
 
