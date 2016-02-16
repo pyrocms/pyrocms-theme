@@ -15,19 +15,11 @@
 
 <main id="main">
 
-    {% include "theme::partials/messages" %}
+    {% include "theme::partials/breadcrumbs" %}
 
-    {% if template.breadcrumbs %}
-        <ol class="breadcrumb" style="margin-bottom: 5px;">
-            {% for breadcrumb, href in template.breadcrumbs %}
-                <li class="{{ loop.last ? 'active' }}">
-                    <a href="{{ href }}">
-                        {{ trans(breadcrumb) }}
-                    </a>
-                </li>
-            {% endfor %}
-        </ol>
-    {% endif %}
+    <div class="container-fluid">
+        {% include "theme::partials/messages" %}
+    </div>
 
     {{ block('content') }}
 

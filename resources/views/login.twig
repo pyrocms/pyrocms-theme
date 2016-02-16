@@ -7,8 +7,10 @@
             <div class="col-lg-6 col-lg-offset-9">
 
                 <div class="logo">
-                    {{ img('theme::img/logo-dark-transparent.png') }}
+                    {{ img('theme::img/logo-light-transparent.png').height(64)|raw }}
                 </div>
+
+                {% include "theme::partials/messages" %}
 
                 {{ form_open({'method': 'post'}) }}
 
