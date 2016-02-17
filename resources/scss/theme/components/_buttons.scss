@@ -5,6 +5,14 @@
     }
 }
 
+.btn-login-outline {
+    @include button-outline-variant(rgba(255, 255, 255, 0.5));
+
+    &:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+}
+
 .btn-secondary-outline {
     //color: $gray-lighter;
 }
