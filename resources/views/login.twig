@@ -4,10 +4,10 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 col-lg-offset-9">
+            <div class="col-lg-6 col-lg-offset-9 col-md-10 col-md-offset-7 col-sm-10 col-sm-offset-7">
 
                 <div class="logo">
-                    {{ img('theme::img/logo-light-transparent.png').height(64)|raw }}
+                    {{ img('theme::img/logo-white.png').height(55)|raw }}
                 </div>
 
                 {% include "theme::partials/messages" %}
@@ -20,7 +20,7 @@
                 </div>
 
                 <div class="form-group">
-                    <button type="submit" value="Login" class="btn btn-login-outline btn-block">
+                    <button type="submit" value="Login" class="btn btn-success btn-block">
                         {{ trans('anomaly.module.users::button.login') }}
                     </button>
                 </div>

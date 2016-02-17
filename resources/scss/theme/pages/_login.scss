@@ -8,6 +8,7 @@
     background-position: center center;
 
     .logo {
+        opacity: 0.6;
         text-align: center;
         margin-bottom: 2em;
     }
@@ -22,12 +23,12 @@
             position: relative;
 
             input {
-                border: none;
                 background: rgba(66, 66, 66, 0.3);
-                border-color: rgba(66, 66, 66, 0.7);
+                border-color: rgba(255, 255, 255, 0.2);
 
                 &[type="email"] {
-                    margin-bottom: 1px;
+                    margin-bottom: 0;
+                    border-bottom: none;
                     border-bottom-left-radius: 0;
                     border-bottom-right-radius: 0;
                 }
