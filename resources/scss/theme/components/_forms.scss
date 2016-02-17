@@ -5,14 +5,14 @@
         padding-bottom: 2rem;
         border-bottom: 1px solid $gray-lighter;
 
+        .form-group {
+            margin-bottom: 0;
+        }
+
         &:last-child {
             margin-bottom: 0;
             padding-bottom: 0;
             border-bottom: none;
-
-            .form-group {
-                margin-bottom: 0;
-            }
         }
     }
 
