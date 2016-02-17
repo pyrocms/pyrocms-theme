@@ -1,5 +1,10 @@
+html,
+body {
+    height: 100%;
+}
+
 #main {
-    padding-top: 1em;
+    min-height: 100vh - 35rem;
 }
 
 .hidden {
