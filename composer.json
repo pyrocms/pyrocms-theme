@@ -3,6 +3,8 @@
     "type": "streams-addon",
     "description": "The official admin theme for PyroCMS.",
     "keywords": [
+        "cms",
+        "addon",
         "theme",
         "pyrocms",
         "laravel"
@@ -12,7 +14,7 @@
     "authors": [
         {
             "name": "PyroCMS, Inc.",
-            "email": "ryan@pyrocms.com",
+            "email": "suport@pyrocms.com",
             "homepage": "http://pyrocms.com/",
             "role": "Owner"
         }
