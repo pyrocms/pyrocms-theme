@@ -5,38 +5,42 @@
         padding-bottom: 2rem;
         border-bottom: 1px solid $gray-lighter;
 
-        .form-group {
-            margin-bottom: 0;
-
-            &.has-info {
-                .c-checkbox {
-                    color: $brand-info;
-                }
-            }
-
-            &.has-danger {
-                .c-checkbox {
-                    color: $brand-danger;
-                }
-            }
-
-            &.has-success {
-                .c-checkbox {
-                    color: $brand-success;
-                }
-            }
-
-            &.has-warning {
-                .c-checkbox {
-                    color: $brand-warning;
-                }
-            }
-        }
-
         &:last-child {
             margin-bottom: 0;
             padding-bottom: 0;
             border-bottom: none;
+        }
+    }
+
+    .form-group {
+        margin-bottom: 0;
+
+        &.has-info {
+            .c-checkbox,
+            .c-radio {
+                color: $brand-info;
+            }
+        }
+
+        &.has-danger {
+            .c-checkbox,
+            .c-radio {
+                color: $brand-danger;
+            }
+        }
+
+        &.has-success {
+            .c-checkbox,
+            .c-radio {
+                color: $brand-success;
+            }
+        }
+
+        &.has-warning {
+            .c-checkbox,
+            .c-radio {
+                color: $brand-warning;
+            }
         }
     }
 
