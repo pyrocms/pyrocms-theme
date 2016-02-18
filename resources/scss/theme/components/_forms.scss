@@ -7,6 +7,30 @@
 
         .form-group {
             margin-bottom: 0;
+
+            &.has-info {
+                .c-checkbox {
+                    color: $brand-info;
+                }
+            }
+
+            &.has-danger {
+                .c-checkbox {
+                    color: $brand-danger;
+                }
+            }
+
+            &.has-success {
+                .c-checkbox {
+                    color: $brand-success;
+                }
+            }
+
+            &.has-warning {
+                .c-checkbox {
+                    color: $brand-warning;
+                }
+            }
         }
 
         &:last-child {
