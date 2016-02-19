@@ -6,41 +6,65 @@
     box-shadow: 5px 5px 0 rgba(66, 66, 66, 0.1);
     @include border-radius(0);
 
-    &.card-blank {
+    &.card-container {
         border: none;
         box-shadow: none;
         background: transparent;
     }
+}
 
-    &.card-cornered {
-        &:after {
-            bottom: 0;
-            right: 0;
-            content: '';
-            position: absolute;
-            border-right: 20px solid;
-            border-top: transparent 20px solid;
-        }
+.card-corner {
+    right: 0;
+    bottom: 0;
+    content: '';
+    position: absolute;
+    border-right: 20px solid;
+    border-top: transparent 20px solid;
 
-        &.primary {
-            &:after {
-                border-right-color: $brand-primary;
-            }
-        }
+    &.card-corner-primary {
+        border-right-color: $brand-primary;
     }
 
-    .card-label {
-        color: #ffffff;
-        display: inline-block;
-        margin-bottom: $card-spacer-y/2;
-        padding: $card-spacer-y/2 ($card-spacer-x * 2);
+    &.card-corner-success {
+        border-right-color: $brand-success;
+    }
 
-        &.primary {
-            background: $brand-primary;
-        }
+    &.card-corner-warning {
+        border-right-color: $brand-warning;
+    }
 
-        &.success {
-            background: $brand-success;
-        }
+    &.card-corner-danger {
+        border-right-color: $brand-danger;
+    }
+
+    &.card-corner-info {
+        border-right-color: $brand-info;
+    }
+}
+
+.card-label {
+    color: #ffffff;
+    display: inline-block;
+    margin-bottom: $card-spacer-y/2;
+    padding: $card-spacer-y/2 ($card-spacer-x * 2);
+
+    &.card-label-primary {
+        background: $brand-primary;
+    }
+
+    &.card-label-success {
+        background: $brand-success;
+    }
+
+    &.card-label-warning {
+        background: $brand-warning;
+    }
+
+    &.card-label-danger {
+        background: $brand-danger;
+    }
+
+    &.card-label-info {
+        background: $brand-info;
     }
 }

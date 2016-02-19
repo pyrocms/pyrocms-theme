@@ -9,5 +9,8 @@ return [
         'theme::img/backgrounds/mountains.jpg',
         'theme::img/backgrounds/landscape.jpg',
         'theme::img/backgrounds/power-lines.jpg'
+    ],
+    'banners'     => [
+        'theme::img/banners/ravine.jpg'
     ]
 ];
