@@ -1,7 +1,46 @@
 .card {
+    border: none;
+    position: relative;
+    background: #ffffff;
+    margin-bottom: $card-spacer-y;
+    box-shadow: 5px 5px 0 rgba(66, 66, 66, 0.1);
+    @include border-radius(0);
 
     &.card-blank {
         border: none;
+        box-shadow: none;
         background: transparent;
+    }
+
+    &.card-cornered {
+        &:after {
+            bottom: 0;
+            right: 0;
+            content: '';
+            position: absolute;
+            border-right: 20px solid;
+            border-top: transparent 20px solid;
+        }
+
+        &.primary {
+            &:after {
+                border-right-color: $brand-primary;
+            }
+        }
+    }
+
+    .card-label {
+        color: #ffffff;
+        display: inline-block;
+        margin-bottom: $card-spacer-y/2;
+        padding: $card-spacer-y/2 ($card-spacer-x * 2);
+
+        &.primary {
+            background: $brand-primary;
+        }
+
+        &.success {
+            background: $brand-success;
+        }
     }
 }

@@ -315,7 +315,7 @@ return [
      * $card-border-radius: $border-radius !default;
      * $card-border-color: #e5e5e5 !default;
      * $card-border-radius-inner: $card-border-radius !default;
-     * $card-cap-bg: #f5f5f5 !default;
+     * $card-cap-bg: #ffffff !default;
      * $card-bg: #ffffff !default;
      *
      * $card-link-hover-color: #ffffff !default;
