@@ -271,9 +271,9 @@ $btn-padding-x-lg: 1.25rem !default;
 $btn-padding-y-lg: .75rem !default;
 
 // Allows for customizing button radius independently from global border radius
-$btn-border-radius: 0 !default;
-$btn-border-radius-lg: 0 !default;
-$btn-border-radius-sm: 0 !default;
+$btn-border-radius: $border-radius !default;
+$btn-border-radius-lg: $border-radius-lg !default;
+$btn-border-radius-sm: $border-radius-sm !default;
 
 // Forms
 
@@ -288,9 +288,9 @@ $input-border-color: #cccccc !default;
 $input-btn-border-width: $border-width !default; // For form controls and buttons
 $input-box-shadow: inset 0 1px 1px $blue !default;
 
-$input-border-radius: 0 !default;
-$input-border-radius-lg: 0 !default;
-$input-border-radius-sm: 0 !default;
+$input-border-radius: $border-radius !default;
+$input-border-radius-lg: $border-radius-lg !default;
+$input-border-radius-sm: $border-radius-sm !default;
 
 $input-border-focus: $blue !default;
 $input-box-shadow-focus: $blue !default;
@@ -533,7 +533,7 @@ $modal-sm: 300px !default;
 // Define alert colors, border radius, and padding.
 
 $alert-padding: 15px !default;
-$alert-border-radius: 0 !default;
+$alert-border-radius: $border-radius !default;
 $alert-link-font-weight: bold !default;
 $alert-border-width: $border-width !default;
 

@@ -67,9 +67,9 @@ return [
     'line-height-lg'         => (4 / 3),
     'line-height-sm'         => 1.5,
 
-    'border-radius'         => '.25rem',
-    'border-radius-lg'      => '.3rem',
-    'border-radius-sm'      => '.2rem',
+    'border-radius'         => '0',
+    'border-radius-lg'      => '0',
+    'border-radius-sm'      => '0',
 
     // Tables
     'table-cell-padding'    => '.75rem',
