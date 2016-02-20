@@ -58,7 +58,8 @@ return [
 
     'lead-font-size'         => '1.25rem',
     'lead-font-weight'       => 300,
-    'text-muted'             => '#bfc7c9',
+    'text-muted'             => '#818a91',
+    'text-faded'             => '#bfc7c9',
     'abbr-border-color'      => '#818a91',
     'blockquote-small-color' => '#818a91',
 

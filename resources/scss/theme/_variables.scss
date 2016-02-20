@@ -180,7 +180,8 @@ $headings-color: inherit !default;
 $lead-font-size: 1.25rem !default;
 $lead-font-weight: 300 !default;
 
-$text-muted: #bfc7c9 !default;
+$text-muted: $gray-light !default;
+$text-faded: #bfc7c9 !default;
 
 $abbr-border-color: $gray-light !default;
 
