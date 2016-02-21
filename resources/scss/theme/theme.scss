@@ -1,10 +1,8 @@
 // Bootstrap base styles
 @import "../bootstrap/bootstrap";
-
 // Utilities
 @import "mixins";
 @import "variables";
-
 // Layout
 @import "layout/menu";
 @import "layout/push";
@@ -16,7 +14,6 @@
 @import "layout/buttons";
 @import "layout/sections";
 @import "layout/navigation";
-
 // Components
 @import "components/nav";
 @import "components/type";
@@ -26,6 +23,7 @@
 @import "components/loader";
 @import "components/modals";
 @import "components/tables";
+@import "components/animate";
 @import "components/buttons";
 @import "components/progress";
 @import "components/utilities";
@@ -33,7 +31,6 @@
 @import "components/input-group";
 @import "components/scaffolding";
 @import "components/custom-forms";
-
 // Special Pages
 @import "pages/login";
 @import "pages/installer";

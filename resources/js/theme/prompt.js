@@ -14,13 +14,13 @@ $(function () {
             } else if (typeof result == 'string') {
                 $('.bootbox.modal')
                     .find('.modal-dialog')
-                    .addClass('animate shake');
+                    .addClass('animated shake');
 
                 setTimeout(function () {
                     $('.bootbox.modal')
                         .find('.modal-dialog')
                         .removeClass('shake')
-                        .removeClass('animate')
+                        .removeClass('animated')
                 }, 1000);
 
                 return false;
