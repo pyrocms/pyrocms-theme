@@ -1,7 +1,9 @@
 <ul id="menu">
 
     <li>
-        <a href="{{ url('/') }}" target="_blank" class="btn btn-secondary-outline btn-sm">View Site</a>
+        <a href="{{ url('/') }}" target="_blank" class="btn btn-secondary-outline btn-sm">
+            {{ trans('pyrocms.theme.pyrocms::control_panel.view_site') }}
+        </a>
     </li>
 
     <li class="dropdown">
@@ -20,7 +22,9 @@
                 <div class="media-body">
                     <div class="media-heading">{{ user().display_name }}</div>
                     <div class="email">{{ user().email }}</div>
-                    <a href="{{ url('admin/logout') }}" class="btn btn-primary btn-sm">Logout</a>
+                    <a href="{{ url('admin/logout') }}" class="btn btn-primary btn-sm">
+                        {{ trans('pyrocms.theme.pyrocms::control_panel.logout') }}
+                    </a>
                 </div>
             </div>
 

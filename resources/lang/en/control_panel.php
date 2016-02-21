@@ -1,5 +1,8 @@
 <?php
 
 return [
-    'title' => 'Control Panel'
+    'help'      => 'Help',
+    'logout'    => 'Logout',
+    'view_site' => 'View Site',
+    'title'     => 'Control Panel'
 ];
