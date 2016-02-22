@@ -21,7 +21,7 @@
 {{ asset_add("theme.js", "theme::js/libraries/*") }}
 {{ asset_add("theme.js", "theme::js/theme/*") }}
 
-{{ asset_style("theme.css", ["debug"]) }}
+{{ asset_style("theme.css") }}
 
 {% for style in asset_styles("styles.css") %}
     {{ style|raw }}
