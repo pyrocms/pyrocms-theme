@@ -11,6 +11,12 @@ return [
         'theme::img/backgrounds/power-lines.jpg'
     ],
     'banners'     => [
-        'theme::img/banners/ravine.jpg'
+        'theme::img/banners/urban.jpg',
+        'theme::img/banners/meadow.jpg',
+        'theme::img/banners/forest.jpg',
+        'theme::img/banners/ravine.jpg',
+        'theme::img/banners/mountains.jpg',
+        'theme::img/banners/landscape.jpg',
+        'theme::img/banners/power-lines.jpg'
     ]
 ];
