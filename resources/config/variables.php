@@ -141,9 +141,9 @@ return [
     'input-btn-border-width' => '1px',
     'input-box-shadow'       => 'inset 0 1px 1px rgba(0, 0, 0, .075)',
 
-    'input-border-radius'    => '.25rem',
-    'input-border-radius-lg' => '.3rem',
-    'input-border-radius-sm' => '.2rem',
+    'input-border-radius'    => '0',
+    'input-border-radius-lg' => '0',
+    'input-border-radius-sm' => '0',
 
     'input-border-focus'      => '#38b5e6',
     'input-box-shadow-focus'  => 'rgba(102, 175, 233, .6)',
