@@ -1,0 +1,9 @@
+.pagination {
+    list-style-type: none;
+    margin: $spacer-y auto $spacer-y auto;
+
+    li {
+        display: inline;
+        padding: $spacer-y/2 $spacer-x/2;
+    }
+}
