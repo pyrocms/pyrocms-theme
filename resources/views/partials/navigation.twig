@@ -1,14 +1,14 @@
 <div id="navigation">
     <ul class="nav nav-tabs">
-        {% for module in template.addons.modules.navigation().slice(0, 5) %}
+        {% for link in template.cp.navigation.slice(0, 5) %}
             <li class="nav-item">
-                <a class="nav-link {{ module.active ? 'active' }}" href="{{ url_to('admin/' ~ module.slug) }}">
+                <a class="nav-link {{ link.active ? 'active' }}" href="{{ link.href }}">
 
                     {% if loop.first %}
                         {{ icon('home') }}&nbsp;
                     {% endif %}
 
-                    {{ trans(module.title) }}
+                    {{ trans(link.title) }}
                 </a>
             </li>
         {% endfor %}
