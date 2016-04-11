@@ -21,7 +21,7 @@
                         {% for link in links %}
                             <div class="col-sm-6">
                                 <a class="nav-link {{ link.active ? 'active' }}"
-                                   {{ html_attributes(section.attributes) }}>
+                                   href="{{ link.href }}">
                                     {{ trans(link.title) }}
                                 </a>
                             </div>
