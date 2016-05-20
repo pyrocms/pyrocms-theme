@@ -15,7 +15,13 @@
                 {{ form_open({'method': 'post'}) }}
 
                 <div class="form-group credentials">
-                    {{ form_email("email", null, {'class': 'form-control', 'placeholder': 'Email'}) }}{{ icon('envelope') }}
+
+                    {% if setting_value('anomaly.module.users::login') == 'username' %}
+                        {{ form_text("username", null, {'class': 'form-control', 'placeholder': 'Username'}) }}{{ icon('user') }}
+                    {% else %}
+                        {{ form_email("email", null, {'class': 'form-control', 'placeholder': 'Email'}) }}{{ icon('envelope') }}
+                    {% endif %}
+
                     {{ form_password('password', {'class': 'form-control', 'placeholder': 'Password'}) }}{{ icon('locked') }}
                 </div>
 

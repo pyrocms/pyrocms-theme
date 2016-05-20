@@ -36,6 +36,14 @@
                     padding-right: 40px;
                 }
 
+                &[type="text"] {
+                    margin-bottom: 0;
+                    border-bottom: none;
+                    border-bottom-left-radius: 0;
+                    border-bottom-right-radius: 0;
+                    padding-right: 40px;
+                }
+
                 &[type="password"] {
                     border-top-left-radius: 0;
                     border-top-right-radius: 0;
