@@ -69,13 +69,11 @@
     }
 }
 
-.card-header {
-    .card-title {
-        margin: 0;
-        color: darken($gray-light, 20%);
+.card-title {
+    margin: 0;
+    color: darken($gray-light, 20%);
 
-        small {
-            color: $gray-light;
-        }
+    small {
+        color: $gray-light;
     }
 }
