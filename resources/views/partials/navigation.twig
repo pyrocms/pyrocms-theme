@@ -8,7 +8,7 @@
                         {{ icon('home') }}&nbsp;
                     {% endif %}
 
-                    {{ trans(link.title) }}
+                    {{ trans(link.title)|raw }}
                 </a>
             </li>
         {% endfor %}

@@ -22,7 +22,7 @@
                             <div class="col-sm-6">
                                 <a class="nav-link {{ link.active ? 'active' }}"
                                    href="{{ link.href }}">
-                                    {{ trans(link.title) }}
+                                    {{ trans(link.title)|raw }}
                                 </a>
                             </div>
                         {% endfor %}
