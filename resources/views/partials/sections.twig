@@ -4,7 +4,7 @@
             <li class="{{ section.highlighted ? 'active' }}">
                 <a {{ html_attributes(section.attributes) }}>
                     {{ section.icon ? icon(section.icon)|raw }}
-                    {{ trans(section.title) }}
+                    {{ trans(section.title)|raw }}
                 </a>
             </li>
         {% endfor %}
