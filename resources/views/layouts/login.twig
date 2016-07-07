@@ -6,7 +6,7 @@
     {% include "theme::partials/metadata" %}
 </head>
 
-<body id="login" style="background-image: url({{ image_url(random(config('pyrocms.theme.pyrocms::design.backgrounds'))) }})">
+<body id="login" style="background-image: url({{ image_path(random(config('pyrocms.theme.pyrocms::design.backgrounds'))) }})">
 
 {{ block('content') }}
 

@@ -8,9 +8,9 @@
 <title>{{ trans('theme::control_panel.title') }} &#8250; {{ trans(template.breadcrumbs.all()|keys|last)|raw }}</title>
 
 <!-- Favicon -->
-<link rel="icon" type="image/x-icon" href="{{ image_url('theme::img/favicon.png') }}">
-<link rel="shortcut icon" type="image/x-icon" href="{{ image_url('theme::img/favicon.png') }}">
-<link rel="apple-touch-icon" type="image/x-icon" href="{{ image_url('theme::img/favicon.png') }}"/>
+<link rel="icon" type="image/x-icon" href="{{ image_path('theme::img/favicon.png') }}">
+<link rel="shortcut icon" type="image/x-icon" href="{{ image_path('theme::img/favicon.png') }}">
+<link rel="apple-touch-icon" type="image/x-icon" href="{{ image_path('theme::img/favicon.png') }}"/>
 
 {#{{ asset_add("theme.css", "theme::less/flat-ui/flat-ui.less") }}#}
 {{ asset_add("theme.css", "theme::less/fonts/fonts.less", ["parse"]) }}
