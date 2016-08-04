@@ -1,7 +1,7 @@
 <div id="sections">
     <ul>
         {% for section in template.cp.sections.root() %}
-            <li class="{{ section.highlighted ? 'active' }}">
+            <li class="{{ section.highlighted ? 'active' }} {{ section.class }}">
                 <a {{ html_attributes(section.attributes) }}>
                     {{ section.icon ? icon(section.icon)|raw }}
                     {{ trans(section.title)|raw }}
