@@ -58,3 +58,22 @@ ul.tree {
         }
     }
 }
+
+@include media-breakpoint-down(sm) {
+	ul.tree {
+	    li {
+	        .card {
+	            .buttons {
+	            	display: block;
+	                a {
+	                	font-size: 0;
+	                	.fa {
+	                		font-size: 18px !important;
+	                	}
+	                }
+	            }
+	
+	        }
+	    }
+	}
+}

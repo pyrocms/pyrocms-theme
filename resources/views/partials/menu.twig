@@ -2,13 +2,13 @@
 
     <li>
         <a href="{{ url('/') }}" target="_blank" class="btn btn-secondary-outline btn-sm">
-            {{ trans('pyrocms.theme.pyrocms::control_panel.view_site') }}
+            <span class="sm-icon"><i class="fa fa-eye"></i></span><span class="sm-txt">{{ trans('pyrocms.theme.pyrocms::control_panel.view_site') }}</span>
         </a>
     </li>
 
     <li class="dropdown">
         <a href="#" data-toggle="dropdown">
-            {{ user().display_name }}
+            <span class="sm-icon"><i class="fa fa-user"></i></span> <span class="sm-txt">{{ user().display_name }}</span>
         </a>
 
         <div class="dropdown-menu">

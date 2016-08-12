@@ -77,3 +77,10 @@
         color: $gray-light;
     }
 }
+
+@include media-breakpoint-down(sm) {
+	.card-block {
+		padding: .5em;
+	}
+}
+

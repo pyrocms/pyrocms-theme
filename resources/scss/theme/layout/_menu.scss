@@ -73,12 +73,33 @@ $menu-link-color: lighten($gray-light, 25%);
                     color: #ffffff;
                 }
             }
+            
         }
+    }
+    
+    .sm-icon {
+    	display: none;
     }
 }
 
 @include media-breakpoint-down(sm) {
     #menu {
-        display: none;
+        .sm-txt {
+        	display: none;
+        }
+        .sm-icon {
+        	display: block;
+        }
+        li {
+        	.dropdown-menu {
+        		padding: 1em;
+    			min-width: 275px;
+    			.arrow {
+    				left: 95%;
+    				top: -10px;
+    			}
+        	}
+
+      	}
     }
 }
