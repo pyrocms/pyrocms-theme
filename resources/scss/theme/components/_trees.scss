@@ -77,3 +77,45 @@ ul.tree {
 	    }
 	}
 }
+
+@media (max-width: 375px) {
+	ul.tree {
+	    li {
+	        .card {
+	            .buttons {
+	            	display: block;
+    				border-left: 1em solid transparent;
+    				border-right: 1em solid transparent;
+    				border-top: 1em solid #38b5e6;
+    				margin-top: .275em;
+    				
+	            	a {
+	            	display: none;
+	               		.fa {
+	                		font-size: 18px !important;
+	                	}
+	            	}
+	            	
+	            	&:hover, &:focus {
+	            		    position: fixed;
+						    bottom: 0;
+						    background-color: #3e3e3e !important;
+						    border: none;
+						    display: block;
+						    width: 100%;
+						    z-index: 500;
+						    padding-top: .75em;
+						    padding-left: 0.75em;
+						    padding-right: 0.75em;
+						    padding-bottom: 0.75em;
+						    margin-left: -1.1em;
+	            		a {
+	            			display: inline-block;
+	            		}
+	            	}
+	            }
+	
+	        }
+	    }
+	}
+}
