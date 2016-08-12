@@ -22,6 +22,11 @@
 
         .btn {
             display: block;
+            
+            &:not(:first-of-type) {
+            	margin-top: 1em;
+            	margin-left: 0;
+        	}
         }
     }
 }

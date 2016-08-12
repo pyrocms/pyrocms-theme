@@ -31,12 +31,15 @@ $navigation-active-bg: $gray-dark;
     }
 }
 
-@include media-breakpoint-down(sm) {
+@media (max-width: 970px) {
     #navigation {
+    	margin-top: .75em;
+    	margin-left: 0;
         .nav {
             li {
-                &:not(:first-child) {
-                    display: none;
+            	display: none;
+                &:last-child {
+                    display: block !important;
                 }
             }
         }
