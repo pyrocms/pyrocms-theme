@@ -15,4 +15,6 @@
 
 .c-select {
     @include border-radius($btn-border-radius);
+    padding: 0.6rem 1.75rem 0.6rem 0.75rem;
+    line-height: 1;
 }
