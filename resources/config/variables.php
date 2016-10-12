@@ -36,10 +36,10 @@ return [
     'link-decoration'        => 'none',
 
     // Typography
-    'font-family-sans-serif' => '"Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif',
+    'font-family-sans-serif' => '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
     'font-family-serif'      => 'Georgia, "Times New Roman", Times, serif',
     'font-family-monospace'  => 'Menlo, Monaco, Consolas, "Courier New", monospace',
-    'font-family-base'       => '"Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif',
+    'font-family-base'       => '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
 
     // Fonts
     'font-size-root'         => '16px',
