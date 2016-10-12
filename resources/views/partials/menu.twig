@@ -30,9 +30,18 @@
 
             <hr>
 
-            <a href="{{ url('admin/preferences') }}" class="nav-item">{{ trans('anomaly.module.preferences::addon.title') }}</a>
-            <br>
-            <a href="{{ url('admin/settings') }}" class="nav-item">{{ trans('anomaly.module.settings::addon.title') }}</a>
+            {% if user().hasPermission('anomaly.module.preferences::*') %}
+                <div>
+                    <a href="{{ url('admin/preferences') }}" class="nav-item">{{ trans('anomaly.module.preferences::addon.title') }}</a>
+                </div>
+            {% endif %}
+
+            {% if user().hasPermission('anomaly.module.settings::*') %}
+                <div>
+                    <a href="{{ url('admin/settings') }}" class="nav-item">{{ trans('anomaly.module.settings::addon.title') }}</a>
+                </div>
+            {% endif %}
+            
         </div>
     </li>
 
