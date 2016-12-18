@@ -1,5 +1,5 @@
-$(function () {
-
+var initModal = function () {
+    
     var modal = $('.modal');
     var remote = $('.modal.remote');
 
@@ -49,4 +49,12 @@ $(function () {
             });
         }
     });
+};
+
+$(document).ready(function () {
+    initModal();
+});
+
+$(document).ajaxComplete(function () {
+    initModal();
 });
